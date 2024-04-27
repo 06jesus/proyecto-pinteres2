@@ -1,0 +1,158 @@
+:root {
+  --color1: rgb(230, 0, 35);
+  --color2: rgb(233, 233, 233);
+  --color3: rgb(182, 0, 0);
+  --color4: rgb(0, 0, 0);
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+header {
+  width: 100%;
+}
+
+.input-buscador-t1 {
+  width: 65%;
+  height: 40px;
+  background-color: var(--color2);
+  color: var(--color4);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border-radius: 60px;
+  border: none;
+  padding-left: 10px;
+}
+
+.logoNav > img {
+  width: 128px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  top: 0%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 45px;
+  gap: 20px;
+  position: fixed;
+  background-color: white;
+}
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 16px;
+}
+
+#app > img {
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  gap: 15px;
+  height: auto;
+}
+
+.textDinamico {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+}
+
+.textDinamico2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+main > article {
+  display: flex;
+  gap: 15px;
+}
+
+main > article > button {
+  border-radius: 60px;
+  width: 195px;
+  height: 50px;
+  background-color: var(--color2);
+  border: none;
+  cursor: pointer;
+}
+
+.imgIcono {
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+}
+
+.buttonsDinamics {
+  display: none;
+}
+
+.buttonDinamic,
+.buttonDinamic2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: var(--color1);
+  width: 100%;
+  height: 40px;
+  bottom: 0%;
+}
+
+footer > p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color2);
+  text-align: center;
+}
+
+.buttonDinamic:hover,
+.buttonDinamic2:hover,
+.button-t1:hover,
+.button-t2:hover,
+.button-t3:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 1327px) {
+  .input-buscador-t1 {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 670px) {
+  main {
+    margin-top: 130px;
+  }
+  #app > img {
+    max-width: 194px;
+  }
+  main > article > button {
+    width: 135px;
+  }
+}
