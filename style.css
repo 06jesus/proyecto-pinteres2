@@ -60,6 +60,10 @@ nav {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+#app {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
 
 main {
   display: flex;
