@@ -36,6 +36,12 @@ function handleButtonClick(button) {
   return async () => {
     const query = button.textContent.trim()
     if (query) {
+      input.value = query
+      textDinamico.textContent = query
+      textDinamico2.textContent =
+        'Descubre las mejores ideas de ' +
+        query +
+        '. Inspírate y crea tu propio estilo.'
       const data = await searchImages(query)
       if (data) {
         updateImages(data.photos)
